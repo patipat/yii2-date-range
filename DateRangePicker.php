@@ -488,7 +488,7 @@ JS;
             return;
         }
         if ($this->hasModel()) {
-            $this->model->$attr = $value;
+            $this->model->{$this->$attr} = $value;
         } else {
             $opts = $type . 'InputOptions';
             $options = $this->$opts;
